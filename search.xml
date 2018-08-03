@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[绝佳的hexo+github+theme+admin博客搭建流程]]></title>
     <url>%2Fdodan200%2F2018%2F07%2F18%2F%E7%BB%9D%E4%BD%B3%E7%9A%84hexo-github-theme-admin%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%B5%81%E7%A8%8B%2F</url>
-    <content type="text"><![CDATA[安装Hexo $ npm install -g hexo-cli 新建个人Blog 123$ hexo init &lt;folder&gt; $ cd &lt;folder&gt; $ npm install 安装后台插件 123456789npm install --save hexo-admin hexo server -d open http://localhost:4000/admin/ 设置后台密码 admin: username: myfavoritename password_hash: be121740bf988b2225a313fa1f107ca1 secret: a secret something -]]></content>
+    <content type="text"><![CDATA[安装Hexo $ npm install -g hexo-cli 新建个人Blog 123$ hexo init &lt;folder&gt; $ cd &lt;folder&gt; $ npm install 安装后台插件 1https://www.cnblogs.com/xingyunblog/p/8681205.html]]></content>
   </entry>
   <entry>
     <title><![CDATA[开发问题总结]]></title>
