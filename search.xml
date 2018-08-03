@@ -2,12 +2,12 @@
 <search>
   <entry>
     <title><![CDATA[绝佳的hexo+github+theme+admin博客搭建流程]]></title>
-    <url>%2Fdodan200%2F2018%2F07%2F18%2F%E7%BB%9D%E4%BD%B3%E7%9A%84hexo-github-theme-admin%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%B5%81%E7%A8%8B%2F</url>
+    <url>%2F2018%2F07%2F18%2F%E7%BB%9D%E4%BD%B3%E7%9A%84hexo-github-theme-admin%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%B5%81%E7%A8%8B%2F</url>
     <content type="text"><![CDATA[安装Hexo $ npm install -g hexo-cli 新建个人Blog 123$ hexo init &lt;folder&gt; $ cd &lt;folder&gt; $ npm install 安装后台插件 1https://www.cnblogs.com/xingyunblog/p/8681205.html]]></content>
   </entry>
   <entry>
     <title><![CDATA[开发问题总结]]></title>
-    <url>%2Fdodan200%2F2018%2F07%2F18%2Fssh%E9%85%8D%E7%BD%AE%2F</url>
+    <url>%2F2018%2F07%2F18%2Fssh%E9%85%8D%E7%BD%AE%2F</url>
     <content type="text"><![CDATA[1，问题:ssh Permission denied (publickey) 解决方案：1https://www.cnblogs.com/896240130Master/p/8337809.html 2，问题 Appium Could not detect Mac OS X Version from sw_vers output: ‘10.12 ‘ 解决方案：1https://blog.csdn.net/achang21/article/details/6492263]]></content>
   </entry>
 </search>
