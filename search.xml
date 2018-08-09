@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[python爬取猫眼电影榜单top100数据]]></title>
+    <url>%2F2018%2F08%2F09%2Fpython%2F</url>
+    <content type="text"><![CDATA[123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657import datetimeimport reimport requestsfrom requests.exceptions import RequestExceptiondef get_one_page(url): try: response = requests.get(url) if response.status_code == 200: return response.text return None except RequestException: return Nonedef parse_one_page(html): # &lt;dd&gt;.*?board-index.*?&gt;(\ d+)&lt;/i&gt;.*?data-src=&quot;(.*?)&quot;.*?name&quot;&gt;&lt;a.*?&gt;(.*?)&lt;/a&gt;.*?star&quot;&gt;(.*?)&lt;/p&gt;.*?releasetime&quot;&gt;(.*?)&lt;/p&gt;.*?integer&quot;&gt;(.*?)&lt;/i&gt;.*?fraction&quot;&gt;(.*?)&lt;/i&gt;.*?&lt;/dd&gt; pattern= re.compile(&apos;&lt;dd&gt;.*?board-index.*?&gt;(\d+)&lt;/i&gt;.*?data-src=&quot;(.*?)&quot;.*?name&quot;&gt;&lt;a.*?&gt;(.*?)&lt;/a&gt;.*?star&quot;&gt;(.*?)&lt;/p&gt;.*?releasetime&quot;&gt;(.*?)&lt;/p&gt;.*?integer&quot;&gt;(.*?)&lt;/i&gt;.*?fraction&quot;&gt;(.*?)&lt;/i&gt;.*?&lt;/dd&gt;&apos;,re.S) items = re.findall(pattern,html) print(&quot;当前页面有 &quot;+str(len(items))+&quot; 条数据\n&quot;) print(items) # for item in items: # yield &#123; # &apos;index&apos;: item[0], # &apos;image&apos;: item[1], # &apos;title&apos;: item[2] # &#125; # print(item) # return ;def main(): url = &quot;http://maoyan.com/board/4?&quot; html = get_one_page(url) parse_one_page(html)def printDate(): print(&quot;当前时间-&gt;&quot;) print(datetime.datetime.now())# define exceptiondef toException(): try: print(&quot;eeee&quot;) except RequestException: return Noneif __name__ == &apos;__main__&apos;: printDate() main()]]></content>
+  </entry>
+  <entry>
     <title><![CDATA[绝佳的hexo+github+theme+admin博客搭建流程]]></title>
     <url>%2F2018%2F07%2F18%2F%E7%BB%9D%E4%BD%B3%E7%9A%84hexo-github-theme-admin%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%B5%81%E7%A8%8B%2F</url>
     <content type="text"><![CDATA[安装Hexo $ npm install -g hexo-cli 新建个人Blog 123$ hexo init &lt;folder&gt; $ cd &lt;folder&gt; $ npm install 安装后台插件 1https://www.cnblogs.com/xingyunblog/p/8681205.html]]></content>
